@@ -1,8 +1,6 @@
 # Financy
 
-# Setup React Frontend
-
-Run 
+# Setup Application 
 
 <code>cd client</code>
 
