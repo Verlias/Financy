@@ -1,5 +1,9 @@
 # Financy
 
+Built using a MERN Stack | MongoDB Express React Node.js
+
+[![My Skills](https://skillicons.dev/icons?i=mongodb,express,react,nodejs)](https://skillicons.dev)
+
 # Setup Application 
 
 <code>cd client</code>
