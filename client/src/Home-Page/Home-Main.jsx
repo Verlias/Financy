@@ -1,12 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import styles from "./Home-Page.module.css";
+import NavBar from "../Components/NavBar";
 
 function Home(){
 
     return(
         <>
-            <p>Home Page</p>    
+            <NavBar />
+            <p>Home Page</p>
         </>
     )
 }

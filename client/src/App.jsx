@@ -4,7 +4,6 @@ import Home from "./Home-Page/Home-Main.jsx";
 import About from "./About-Page/About.jsx";
 
 function App() {
-
   return (
     <>
       <Router>
