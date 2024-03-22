@@ -7,13 +7,13 @@ import styles from "./NavBar.module.css";
 function NavBar(){
     return(
         <nav className={styles.nav}>
-            <a className={styles.site_name} href="/">Financy</a>
+            <Link to="/" className={styles.site_name}>Financy</Link>
             <ul>
                 <li className={styles.active}>
-                    <a href="/home">Home</a>
+                    <Link to="/home">Home</Link>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <Link to="/about">About</Link>
                 </li>
             </ul>
         </nav>
