@@ -11,6 +11,6 @@ function About(){
             <p>Hello world this is about page</p>
         </>
     )
-}
+} 
 
 export default About;
