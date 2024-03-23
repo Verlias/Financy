@@ -1,0 +1,24 @@
+
+
+.LearnSection{
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    
+    justify-content: center;
+    margin:auto;
+    margin-top:150px;
+    width:70%;
+}
+
+.LearnSection > div{
+    color:blue;
+    border:2px solid red;
+    padding:10px;
+    text-align: left;
+}
+
+/*Styling for When you Hover over the Topics */
+.LearnSection > div > h2:hover{
+    color:gray;
+}
