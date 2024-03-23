@@ -58,7 +58,7 @@ function Learn(){
                         linkUrl="/BankingR1"
                         />
                         </h2>
-                    </div>
+                    </div>   
             </section>
         </>
     )
