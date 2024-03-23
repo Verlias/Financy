@@ -16,6 +16,7 @@ function ButtonElementRenderer({ButtonName,content,linkUrl}) {
             <button onClick={handleButtonClick}>{ButtonName}</button>
             {isVisible && (
                 <div>
+                    {/*Iterate through a List */}
                     <div>{content}</div>
                     <Link to={linkUrl}>Reading 1</Link>
                         
