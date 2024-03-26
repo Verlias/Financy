@@ -11,14 +11,17 @@ function Learn(){
 
     const BankingEducation = [
         { content: "Banking Reading 1", linkUrl: "/BankingR1" },
-        { content: "Banking  Reading 2", linkUrl: "/reading2" },
-        { content: "Banking  Reading 3", linkUrl: "/reading3" },
+        { content: "Banking Video 1", linkUrl: "/BankingV1" },
+        { content: "Banking Reading 2", linkUrl: "/reading3" },
+        { content: "Banking Video 2", linkUrl: "/BankingV2" },
+        { content: "Banking Reading 3", linkUrl: "/reading3" },
+        { content: "Interactive Activity", linkUrl: "/reading3" },
         // Add more reading items as needed
     ];
 
     const PersonalFinanceEducation = [
         { content: "Personal Finance Reading 1", linkUrl: "/reading1" },
-        { content: "Personal Finance Reading 2", linkUrl: "/reading2" },
+        { content: "Personal Finance Video 1", linkUrl: "/reading2" },
         { content: "Personal Finance Reading 3", linkUrl: "/reading3" },
         // Add more reading items as needed
     ];

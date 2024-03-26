@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from "./Learn.module.css"
 import {Link} from "react-router-dom";
 
 //Drop Down Feature Takes in Parameters 
@@ -13,14 +14,13 @@ function ButtonElementRenderer({ButtonName,content}) {
 
     return (
         <>
-            <button onClick={handleButtonClick}>{ButtonName}</button>
+            <button className={styles.button} onClick={handleButtonClick}>{ButtonName}</button>
             {isVisible && (
                 <div>
                     {/*Iterate through a List */}
                     {content.map((content, index) => (
-                        <div key={index}>
-                            <div>{content.content}</div>
-                            <Link to={content.linkUrl}>Reading {index + 1}</Link>
+                        <div className={styles.EducationSection} key={index}>
+                            <Link className={styles.EducationLink} to={content.linkUrl}>{content.content}</Link>
                         </div>
                     ))}
                         

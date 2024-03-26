@@ -1,7 +1,7 @@
 
 
 .LearnSection{
-    border:2px solid black;
+    
     display:flex;
     flex-direction:column;
     
@@ -13,7 +13,7 @@
 
 .LearnSection > div{
     color:blue;
-    border:2px solid red;
+    border:2px solid black;
     padding:10px;
     text-align: left;
 }
@@ -21,4 +21,28 @@
 /*Styling for When you Hover over the Topics */
 .LearnSection > div > h2:hover{
     color:gray;
+}
+
+/* Button Styling */
+.button{
+    border:0;
+    background-color:white;
+    font-size:1em;
+    margin-bottom:10px;
+}
+
+.EducationSection{
+    border:2px solid grey;
+    padding:10px;
+    
+}
+
+.EducationLink{
+    text-decoration: none;
+    color:darkslategray;
+}
+
+.EducationLink:hover{
+    color: #ADD8E6;
+    text-decoration: underline;
 }
