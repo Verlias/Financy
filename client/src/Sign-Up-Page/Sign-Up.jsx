@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 import styles from "./Sign-Up.module.css";
 import NavBar from "../Components/NavBar";
 
+
+
 function SignUp(){
 
     return(
