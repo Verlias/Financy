@@ -8,7 +8,6 @@ function SignUp(){
     return(
         <>
             <NavBar />
-            <p>sign in page</p>
             <form action="sign-up.php" method="get">
                 <div class="container">
                     <h1>Sign Up</h1>
