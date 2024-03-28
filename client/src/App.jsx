@@ -6,7 +6,7 @@ import Learn from "./Learn-Page/Learn.jsx";
 import BankingReadingR1 from './Banking-Learning/BankingLearnRead1/BankingLearnR1.jsx';
 import BankingVideoV1 from './Banking-Learning/BankingLearnVideos/BankingLearnV1.jsx';
 import BankingVideoV2 from './Banking-Learning/BankingLearnVideos/BankingLearnV2.jsx';
-
+import SignUp from "./Sign-Up-Page/Sign-Up.jsx";
 
 function App() {
   return (
@@ -17,8 +17,7 @@ function App() {
             <Route path="/Home" element={<Home />}/>
             <Route path="/About" element={<About />}/>
             <Route path="/Learn" element={<Learn />}/>
-
-
+            <Route path="/Sign-Up" element={<SignUp />}/>
             {/*Routes for Learning Pages */}
               {/*Routes for Banking Pages */}
               <Route path="/BankingR1" element={<BankingReadingR1 />}/>
