@@ -1,10 +1,10 @@
-  h1 {
+  .header {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 30px;
   }
 
-  form {
+  .form {
     font-family: Arial, sans-serif;
     border: 2px solid #ccc;
     background-color: #ffffff1f;
@@ -13,7 +13,7 @@
     padding: 30px;
   }
 
-  label {
+  .label {
     font-family: Arial, sans-serif;
     font-weight: bold;
     display: flexbox;

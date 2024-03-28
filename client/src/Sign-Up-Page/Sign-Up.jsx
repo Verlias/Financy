@@ -10,19 +10,20 @@ function SignUp(){
     return(
         <>
             <NavBar />
-            <form action="sign-up.php" method="post">
-                <div class="container">
-                    <h1>Sign Up</h1>
-                    <label for="name">Name:</label>
+            <form className={styles.form} action="sign-up.php" method="post">
+                <div>
+                    <h1 className={styles.header}>Sign Up</h1>
+
+                    <label className={styles.label}>Name:</label>
                     <input type="text" id="name" name="name" required/>
 
-                    <label for="email">Email:</label>
+                    <label className={styles.label}>Email:</label>
                     <input type="email" id="email" name="email" required/>
 
-                    <label for="password">Password:</label>
+                    <label className={styles.label}>Password:</label>
                     <input type="password" id="password" name="password" required/>
 
-                    <label for="password">Re-enter Password:</label>
+                    <label className={styles.label}>Re-enter Password:</label>
                     <input type="password" id="password" name="password" required/>
 
                     <button type="cancel">Cancel</button>
