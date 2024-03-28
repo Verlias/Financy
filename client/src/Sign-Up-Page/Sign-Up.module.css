@@ -1,14 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
-  }
-
   h1 {
+    font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 30px;
   }
 
   form {
+    font-family: Arial, sans-serif;
     border: 2px solid #ccc;
     background-color: #ffffff1f;
     width: 500px;
@@ -17,6 +14,7 @@ body {
   }
 
   label {
+    font-family: Arial, sans-serif;
     font-weight: bold;
     display: flexbox;
   }
@@ -24,6 +22,7 @@ body {
   input[type="text"],
   input[type="email"],
   input[type="password"] {
+    font-family: Arial, sans-serif;
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -32,6 +31,7 @@ body {
   }
 
   button[type="submit"] {
+    font-family: Arial, sans-serif;
     background-color: #574caf;
     color: #fff;
     width: 50%;
@@ -43,10 +43,12 @@ body {
   }
 
   button[type="submit"]:hover {
+    font-family: Arial, sans-serif;
     background-color: #413696;
   }
 
   button[type="cancel"] {
+    font-family: Arial, sans-serif;
     background-color: #e32e2e;
     color: #fff;
     width: 50%;
@@ -58,5 +60,6 @@ body {
   }
 
   button[type="cancel"]:hover {
+    font-family: Arial, sans-serif;
     background-color: #9a1c1c;
   }

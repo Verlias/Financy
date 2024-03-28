@@ -10,7 +10,7 @@ function SignUp(){
     return(
         <>
             <NavBar />
-            <form action="sign-up.php" method="get">
+            <form action="sign-up.php" method="post">
                 <div class="container">
                     <h1>Sign Up</h1>
                     <label for="name">Name:</label>
