@@ -14,6 +14,10 @@ Built using a MERN Stack | MongoDB Express React Node.js
 
 <code>npm install axios</code>
 
+<code>cd server</code>
+
+<code>npm install cors</code>
+
 # To Run the Frontend React
 
 <code>cd client</code>
