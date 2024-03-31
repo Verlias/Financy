@@ -1,29 +1,33 @@
 import React, { useState } from "react";
-import axios from "axios";
+import axios from "axios"; // Import Axios for making HTTP requests
 import styles from "./Sign-Up.module.css";
 import NavBar from "../Components/NavBar";
 
 function SignUp() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
+    // State to store form data
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+    });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post("http://localhost:3000/api/signup", formData);
-      console.log(response.data); // Handle response from the backend
-    } catch (error) {
-      console.error("Error signing up:", error);
-    }
-  };
+    // Function to handle changes in form fields
+    const handleChange = (e) => {
+        // Update formData state with the new value of the changed input field
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+    // Function to handle form submission
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevent default form submission behavior
+        try {
+            // Send form data to the backend using Axios POST request
+            const response = await axios.post("http://localhost:3000/api/signup", formData);
+            console.log(response.data); // Log response from the backend
+        } catch (error) {
+            console.error("Error signing up:", error);
+        }
+    };
 
   return (
     <>
