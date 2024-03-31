@@ -12,6 +12,8 @@ Built using a MERN Stack | MongoDB Express React Node.js
 
 <code>npm install react-router-dom</code>
 
+<code>npm install axios</code>
+
 # To Run the Frontend React
 
 <code>cd client</code>
