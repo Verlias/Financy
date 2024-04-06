@@ -76,7 +76,7 @@ function SignUp() {
             required
           />
 
-          <button type="button" onClick={() => {}}>
+          <button type="cancel" onClick={() => {}}>
             Cancel
           </button>
           <button type="submit">Sign Up</button>
