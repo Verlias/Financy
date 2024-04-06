@@ -54,7 +54,7 @@ function LogIn() {
             required
           />
 
-          <button type="button" onClick={() => {}}>
+          <button type="cancel" onClick={() => {}}>
             Cancel
           </button>
           <button type="submit">Log in</button>
