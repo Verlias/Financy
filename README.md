@@ -18,6 +18,16 @@ Built using a MERN Stack | MongoDB Express React Node.js
 
 <code>npm install cors</code>
 
+<code>npm install express</code>
+
+<code>npm install mongoose</code>
+
+<code>npm install nodemon</code>
+
+<code>npm install body-parser</code>
+
+<code>npm install mongodb</code>
+
 # To Run the Frontend React
 
 <code>cd client</code>
