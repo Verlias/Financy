@@ -14,16 +14,16 @@ function NavBar(){
                         <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about">Who we are</Link>
                     </li>
                     <li>
-                        <Link to="/learn">Learn</Link>
+                        <Link to="/learn">Curriculum</Link>
                     </li>
-                    <li>
-                        <Link to="/sign-up">Sign Up</Link>
+                    <li className={styles.SignUpLogin}>
+                        <Link to="/sign-up">Register</Link>
                     </li>
-                    <li>
-                        <Link to="/log-in">Log In</Link>
+                    <li className={styles.SignUpLogin}>
+                        <Link to="/log-in">Login</Link>
                     </li>
                 </ul>
             </nav>
