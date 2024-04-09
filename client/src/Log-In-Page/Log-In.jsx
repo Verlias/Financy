@@ -33,7 +33,6 @@ function LogIn() {
       <form className={styles.form} onSubmit={handleSubmit}>
         <div>
           <h1 className={styles.header}>Log In</h1>
-
           <label className={styles.label}>Email:</label>
           <input
             type="email"
