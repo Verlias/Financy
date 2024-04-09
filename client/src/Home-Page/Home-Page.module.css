@@ -40,12 +40,11 @@
 }
 
 .InvestFinanceImage{
-    padding-right:100px;
     width:350px
 }
 
 .InvestIQImage{
-    padding-left:100px;
+    padding-left:50px;
     width:450px;
     height:450px;
 }
