@@ -1,0 +1,32 @@
+
+.AboutSection{
+    width:1000px;
+    margin:auto;
+    margin-top:75px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.AboutHeadLine{
+    font-size:45px;
+    font-family:Newsreader;
+}
+
+.LineBreak{
+    border:1px solid #E6E6E6;
+    width:100%;
+}
+
+
+.AboutContent{
+    margin-top:10px;
+    border:2px solid #E6E6E6;
+    border-radius: 10px;
+    background-color:#FAFAF5;
+    padding:15px;
+    font-size:22px;
+    font-family:inter;
+}
+

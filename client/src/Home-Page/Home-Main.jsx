@@ -25,12 +25,15 @@ function Home(){
 
                 <img 
                 className={styles.InvestFinanceImage} 
-                src={InvestFinanceImage}>
+                src={InvestFinanceImage}
+                alt="ImageofFinance">
 
                 </img>
 
                 <img
-                className={styles.InvestIQImage} src={InvestIQImage}>
+                className={styles.InvestIQImage} 
+                src={InvestIQImage}
+                alt="InvestIQImage">
 
                 </img>
                 
