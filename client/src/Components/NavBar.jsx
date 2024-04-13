@@ -19,6 +19,9 @@ function NavBar(){
                     <li>
                         <Link to="/learn">Curriculum</Link>
                     </li>
+                    <li>
+                        <Link to="/my-courses">Profile</Link>
+                    </li>
                     <li className={styles.SignUpLogin}>
                         <Link to="/sign-up">Register</Link>
                     </li>

@@ -8,6 +8,10 @@ import BankingVideoV1 from './Banking-Learning/BankingLearnVideos/BankingLearnV1
 import BankingVideoV2 from './Banking-Learning/BankingLearnVideos/BankingLearnV2.jsx';
 import SignUp from "./Sign-Up-Page/Sign-Up.jsx";
 import LogIn from './Log-In-Page/Log-In.jsx';
+import UserDash from './User-Dash/User-Dash.jsx';
+import Courses from './User-Dash/Dash-Components/Courses.jsx';
+import Settings from './User-Dash/Dash-Components/Settings.jsx';
+import Recommended from './User-Dash/Dash-Components/Recommended.jsx';
 
 function App() {
   return (
@@ -25,6 +29,9 @@ function App() {
               <Route path="/BankingR1" element={<BankingReadingR1 />}/>
               <Route path="/BankingV1" element={<BankingVideoV1 />}/>
               <Route path="/BankingV2" element={<BankingVideoV2 />}/>
+              <Route path="/My-Courses" element={<Courses />}/>
+              <Route path="/Recommended" element={<Recommended />}/>
+              <Route path="/Settings" element={<Settings />}/>
         </Routes>
       </Router>
     </>
