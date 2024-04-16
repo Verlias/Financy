@@ -8,8 +8,8 @@ const mongoose = require('mongoose');
 const signupRoute = require('./signup');
 const loginRoute = require('./login');
 
-const uri = "mongodb+srv://rayanreddy29:iVBSdMuxUjsXOU2b@financyusers.1xkznie.mongodb.net/?retryWrites=true&w=majority&appName=FinancyUsers";
-// const uri = "mongodb+srv://logan29:WaziAsZZJbz2HA9a@financyusers.1xkznie.mongodb.net/?retryWrites=true&w=majority&appName=FinancyUsers";
+// const uri = "mongodb+srv://rayanreddy29:iVBSdMuxUjsXOU2b@financyusers.1xkznie.mongodb.net/?retryWrites=true&w=majority&appName=FinancyUsers";
+const uri = "mongodb+srv://logan29:WaziAsZZJbz2HA9a@financyusers.1xkznie.mongodb.net/?retryWrites=true&w=majority&appName=FinancyUsers";
 
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 // Create a Mongoose client with a MongoClientOptions object to set the Stable API version
