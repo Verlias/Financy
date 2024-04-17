@@ -1,4 +1,5 @@
 # Financy
+Financy is a Web Application aimed to bridge the gap in financial education for adolescents by providing practical tools and resources to empower them with essential financial skills beyond traditional classroom learning.
 
 Built using a MERN Stack | MongoDB Express React Node.js
 
