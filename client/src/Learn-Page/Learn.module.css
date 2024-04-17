@@ -1,39 +1,78 @@
 
+.MainLearnSection{
+    background-color:#FAFAF5;
+    border:2px solid #E6E6E6;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    margin-top:30px;
+    padding:50px;
+    height:100%;
+    width:1500px;
+    
+}
+
+.HeadlineLearn{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width:1600px;
+    margin:auto;
+    margin-top:10px;
+}
+.LearnHeadLineContent{
+    font-size:45px;
+    font-family:Newsreader;
+    margin-right:auto;
+    margin-bottom:auto;
+}
+
+.LineBreak{
+    border:1px solid #E6E6E6;
+    width:100%;
+}
 
 .LearnSection{
-    
     display:flex;
     flex-direction:column;
-    
     justify-content: center;
     margin:auto;
-    margin-top:150px;
     width:70%;
+    
 }
 
 .LearnSection > div{
     color:blue;
-    border:2px solid black;
+    border:2px solid #E6E6E6;
+    border-radius: 15px;
+    margin-top:10px;
     padding:10px;
     text-align: left;
+    box-shadow: 0 4px 6px -6px black;
 }
 
 /*Styling for When you Hover over the Topics */
 .LearnSection > div > h2:hover{
-    color:gray;
+    color:blue;
 }
 
 /* Button Styling */
 .button{
     border:0;
-    background-color:white;
+    background-color:#FAFAF5;
     font-size:1em;
     margin-bottom:10px;
 }
 
 .EducationSection{
-    border:2px solid grey;
+    border:2px solid #E6E6E6;
+    border-radius: 15px;
     padding:10px;
+    margin-top:10px;
+    box-shadow: 0 4px 6px -6px black;
     
 }
 
