@@ -1,6 +1,6 @@
 
 .AboutSection{
-    width:1000px;
+    width:1400px;
     margin:auto;
     margin-top:75px;
     display:flex;
@@ -12,6 +12,7 @@
 .AboutHeadLine{
     font-size:45px;
     font-family:Newsreader;
+    margin-bottom:auto;
 }
 
 .LineBreak{

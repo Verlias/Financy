@@ -50,49 +50,55 @@ function Learn(){
     return(
         <>
             <NavBar />
-            <section className={styles.LearnSection}>
-                <div>
-                    <h2>
-                        <Dropdown 
-                            ButtonName="1) Banking"
-                            content={BankingEducation}
-    
-                        />
-                    </h2>
-                </div>
-                <div>
-                    <h2>
-                        <Dropdown 
-                            ButtonName="2) Personal Finance"
-                            content={PersonalFinanceEducation}
+            <div className={styles.HeadlineLearn}>
+                <h1 className={styles.LearnHeadLineContent}>Curriculum</h1>
+                <hr className={styles.LineBreak}></hr>
+            </div>
+            <main className={styles.MainLearnSection}>
+                <section className={styles.LearnSection}>
+                    <div>
+                        <h2>
+                            <Dropdown 
+                                ButtonName="1) Banking"
+                                content={BankingEducation}
+        
+                            />
+                        </h2>
+                    </div>
+                    <div>
+                        <h2>
+                            <Dropdown 
+                                ButtonName="2) Personal Finance"
+                                content={PersonalFinanceEducation}
+                                />
+                                </h2>
+                        </div>
+                    <div>
+                        <h2>
+                            <Dropdown 
+                                ButtonName="3) Investing"
+                                content={InvestingEducation}
                             />
                             </h2>
-                    </div>
-                <div>
-                    <h2>
-                        <Dropdown 
-                            ButtonName="3) Investing"
-                            content={InvestingEducation}
-                        />
-                        </h2>
-                    </div>
-                <div>
-                    <h2>
-                        <Dropdown 
-                            ButtonName="4) Asset Management"
-                            content={AssetManagementEducation}
-                        />
-                        </h2>
-                    </div>
-                <div>
-                    <h2>
-                        <Dropdown 
-                        ButtonName="5) Retirement"
-                        content={RetirementEducation}
-                        />
-                        </h2>
-                    </div>   
-            </section>
+                        </div>
+                    <div>
+                        <h2>
+                            <Dropdown 
+                                ButtonName="4) Asset Management"
+                                content={AssetManagementEducation}
+                            />
+                            </h2>
+                        </div>
+                    <div>
+                        <h2>
+                            <Dropdown 
+                            ButtonName="5) Retirement"
+                            content={RetirementEducation}
+                            />
+                            </h2>
+                        </div>   
+                </section>
+            </main>
         </>
     )
 }
