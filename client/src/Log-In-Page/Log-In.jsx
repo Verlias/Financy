@@ -56,7 +56,7 @@ function LogIn() {
           <button type="cancel" onClick={() => {}}>
             Cancel
           </button>
-          <button type="submit">Log in</button>
+          <button type="login" className={styles.login}>Log in</button>
         </div>
       </form>
     </>

@@ -79,7 +79,7 @@ function SignUp() {
           <button type="cancel" onClick={() => {}}>
             Cancel
           </button>
-          <button type="submit">Sign Up</button>
+          <button type="signUp">Sign Up</button>
         </div>
       </form>
     </>

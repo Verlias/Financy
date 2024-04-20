@@ -30,7 +30,7 @@
     margin-bottom: 25px;
   }
 
-  button[type="submit"] {
+  button[type="signUp"] {
     font-family: Arial, sans-serif;
     background-color: #574caf;
     color: #fff;
@@ -42,8 +42,7 @@
     margin: auto;
   }
 
-  button[type="submit"]:hover {
-    font-family: Arial, sans-serif;
+  button[type="signUp"]:hover {
     background-color: #413696;
   }
 
