@@ -10,8 +10,9 @@ import SignUp from "./Sign-Up-Page/Sign-Up.jsx";
 import LogIn from './Log-In-Page/Log-In.jsx';
 import UserDash from './User-Dash/User-Dash.jsx';
 import Courses from './User-Dash/Dash-Components/Courses.jsx';
-import Settings from './User-Dash/Dash-Components/Settings.jsx';
+import SettingsNew from './User-Dash/Dash-Components/SettingsUpdate.jsx';
 import Recommended from './User-Dash/Dash-Components/Recommended.jsx';
+import Settings from './User-Dash/Dash-Components/Settings.jsx'
  
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Route path="/BankingV2" element={<BankingVideoV2 />}/>
               <Route path="/My-Courses" element={<Courses />}/>
               <Route path="/Recommended" element={<Recommended />}/>
+              <Route path="/SettingsNew" element={<SettingsNew />}/>
               <Route path="/Settings" element={<Settings />}/>
         </Routes>
       </Router>

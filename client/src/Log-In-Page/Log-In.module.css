@@ -30,7 +30,7 @@
     margin-bottom: 25px;
   }
 
-  button[type="submit"] {
+  button[type="login"] {
     font-family: Arial, sans-serif;
     background-color: #574caf;
     color: #fff;
