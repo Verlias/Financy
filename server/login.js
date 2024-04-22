@@ -22,13 +22,10 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ message: 'Invalid password' });
     }
 
-    // Generate JWT token
-    // const token = jwt.sign({ userId: oldUser._id }, 'your-secret-key', { expiresIn: '1h' });
+    const token = jwt.sign({ userID: oldUser }, 'privatekey', { expiresIn: '1h' });
 
-    res.redirect('/my-courses');
-
-    // Send token to the client
-    //res.json({ token });
+    console.log('login successful');
+    res.status(200).json({ message: 'Login successful' });
   } catch (error) {
     console.error('Login error:', error);
     res.status(500).json({ message: 'Internal Server Error' });

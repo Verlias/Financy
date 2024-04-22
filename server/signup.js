@@ -31,9 +31,6 @@ router.post('/signup', async (req, res) => {
 
     console.log('Sign up data received:', formData);
     //res.status(201).json({ message: 'User created successfully' });
-
-    res.redirect('/my-courses');
-    
   } catch (error) {
     console.error('Signup error:', error);
     res.status(500).json({ message: 'Server error' });
