@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import axios from "axios"; // Import Axios for making HTTP requests
 import styles from "./Log-In.module.css";
 import NavBar from "../Components/NavBar";
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from React Router
+
 
 function LogIn() {
     // State to store form data
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         email: "",
         password: "",
@@ -22,6 +25,7 @@ function LogIn() {
             // Send form data to the backend using Axios POST request
             const response = await axios.post("http://localhost:3000/api/login", formData);
             console.log(response.data); // Log response from the backend
+            navigate('/my-courses');
         } catch (error) {
             console.error("Error signing up:", error);
         }
