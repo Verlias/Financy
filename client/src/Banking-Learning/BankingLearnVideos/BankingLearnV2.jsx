@@ -6,7 +6,7 @@ function BankingVideoV2(){
     return(
         <>
             <NavBar />
-            <iframe classname={styles.YoutubeVideo} width="800" height="515" src="https://www.youtube.com/embed/fTTGALaRZoc?si=ec9coE25OEgqwxpK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="800" height="515" src="https://www.youtube.com/embed/jXPKbuk_m14?si=33xeRwGcC3TYKnxi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </>
     );
 };

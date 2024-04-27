@@ -10,19 +10,26 @@ import Dropdown from './DropDown.jsx';
 function Learn(){
 
     const BankingEducation = [
-        { content: "Banking Reading 1", linkUrl: "/BankingR1" },
-        { content: "Banking Video 1", linkUrl: "/BankingV1" },
-        { content: "Banking Reading 2", linkUrl: "/reading3" },
-        { content: "Banking Video 2", linkUrl: "/BankingV2" },
-        { content: "Banking Reading 3", linkUrl: "/reading3" },
+        { content: "What is Banking?", linkUrl: "/BankingR1" },
+        { content: "What is Banking Video ", linkUrl: "/BankingV1" },
+        { content: "Types of Banks & Financial institutions", linkUrl: "/BankingR2" },
+        { content: "Types of Banks", linkUrl: "/BankingV2" },
+        { content: "The role banks play in the economy", linkUrl: "/BankingR3" },
+        { content: "Bank Roles Video", linkUrl: "/BankingV3" },
         { content: "Interactive Activity", linkUrl: "/reading3" },
         // Add more reading items as needed
     ];
 
-    const PersonalFinanceEducation = [
-        { content: "Personal Finance Reading 1", linkUrl: "/reading1" },
-        { content: "Personal Finance Video 1", linkUrl: "/reading2" },
-        { content: "Personal Finance Reading 3", linkUrl: "/reading3" },
+    const Budgeting = [
+        { content: "How to utilize banks", linkUrl: "/BudgetingR1" },
+        { content: "Personal Finance Video", linkUrl: "/BudgetingV1" },
+        { content: "Personal Banking", linkUrl: "/BudgetingR2" },
+        { content: "Managing a Bank Account Video", linkUrl: "/BudgetingV2" },
+        { content: "Purpose of Budgeting", linkUrl: "/BudgetingR3" },
+        { content: "Why you should budget Video", linkUrl: "/BudgetingV3" },
+        { content: "Limiting expenses and Budgeting tools", linkUrl: "/reading3" },
+        { content: "How to Do a Monthly Budget Video", linkUrl: "/BudgetingV4" },
+        { content: "Interactive Activity", linkUrl: "/reading3" },
         // Add more reading items as needed
     ];
 
@@ -33,14 +40,14 @@ function Learn(){
         // Add more reading items as needed
     ];
 
-    const AssetManagementEducation = [
+    const CreditDebt = [
         { content: "Asset Management Reading 1", linkUrl: "/reading1" },
         { content: "Asset Management Reading 2", linkUrl: "/reading2" },
         { content: "Asset Management Reading 3", linkUrl: "/reading3" },
         // Add more reading items as needed
     ];
 
-    const RetirementEducation = [
+    const FinancingHigherEducation = [
         { content: "Retirement Reading 1", linkUrl: "/reading1" },
         { content: "Retirement Reading 2", linkUrl: "/reading2" },
         { content: "Retirement Reading 3", linkUrl: "/reading3" },
@@ -68,8 +75,8 @@ function Learn(){
                     <div>
                         <h2>
                             <Dropdown 
-                                ButtonName="2) Personal Finance"
-                                content={PersonalFinanceEducation}
+                                ButtonName="2) Budgeting"
+                                content={Budgeting}
                                 />
                                 </h2>
                         </div>
@@ -84,16 +91,16 @@ function Learn(){
                     <div>
                         <h2>
                             <Dropdown 
-                                ButtonName="4) Asset Management"
-                                content={AssetManagementEducation}
+                                ButtonName="4) Credit & Debt"
+                                content={CreditDebt}
                             />
                             </h2>
                         </div>
                     <div>
                         <h2>
                             <Dropdown 
-                            ButtonName="5) Retirement"
-                            content={RetirementEducation}
+                            ButtonName="5) Financing Higher Education"
+                            content={FinancingHigherEducation}
                             />
                             </h2>
                         </div>   
