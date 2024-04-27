@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import axios from "axios"; // Import Axios for making HTTP requests
 import styles from "./Sign-Up.module.css";
 import NavBar from "../Components/NavBar";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
+
+    const navigate = useNavigate();  
+
     // State to store form data
     const [formData, setFormData] = useState({
         name: "",
@@ -24,6 +28,9 @@ function SignUp() {
             // Send form data to the backend using Axios POST request
             const response = await axios.post("http://localhost:3000/api/signup", formData);
             console.log(response.data); // Log response from the backend
+            const { token } = response.data
+            localStorage.setItem('token', token);
+            navigate('/my-courses');
         } catch (error) {
             console.error("Error signing up:", error);
         }

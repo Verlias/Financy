@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const User = require('./user');
+const jwt = require('jsonwebtoken');
 
 router.post('/signup', async (req, res) => {
   const formData = req.body;
@@ -29,8 +30,10 @@ router.post('/signup', async (req, res) => {
     // Save the user to the database
     await newUser.save();
 
-    console.log('Sign up data received:', formData);
-    //res.status(201).json({ message: 'User created successfully' });
+    const token = jwt.sign({ userID: newUser }, 'privatekey', { expiresIn: '1h' });
+
+    console.log('sign up successful');
+    res.json({ token: token });
   } catch (error) {
     console.error('Signup error:', error);
     res.status(500).json({ message: 'Server error' });
