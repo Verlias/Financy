@@ -1,10 +1,59 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import {Link, useNavigate} from "react-router-dom";
 import styles from "../User-Dash.module.css";
 import NavBar from "../../Components/NavBar";
 import Course1Img from "../../assets/courseDash1.jpg";
+import axios from "axios";
+//import jwt from 'jsonwebtoken';
 
 function Courses(){
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            navigate('/log-in');
+        } /*else {
+            axios.post('/verify-token', { token })
+            .then(response => {
+                // Token is valid, do nothing
+            })
+            .catch(error => {
+                console.log('Token verify failed:', error.message);
+                navigate('/log-in');
+            });
+        }*/
+        /*else {
+            try {
+                jwt.verify(token, 'privatekey'); // Verify the token
+            } catch (err) {
+                console.log('Token verify failed:', err.message);
+                navigate('/log-in');
+            }
+        }
+        /*else {
+            axios.get("http://localhost:3000/api/user", {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+            .then(response => {
+                const user = response.data.user
+            })
+            .catch(error => {
+                console.error("Error fetching user data:", error);
+                navigate('/log-in');
+            });
+        }*/
+        /*jwt.verify(token, 'privatekey', (err) => {
+            if (err) {
+                console.log('token verify failed');
+                res.sendStatus(403);
+                navigate('/log-in');
+            }
+        });*/
+    }, [navigate]);
 
     const inProgressCourses = [
         { name: "Course 1", progress: 80, image: Course1Img },

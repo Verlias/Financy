@@ -25,6 +25,8 @@ function LogIn() {
             // Send form data to the backend using Axios POST request
             const response = await axios.post("http://localhost:3000/api/login", formData);
             console.log(response.data); // Log response from the backend
+            const { token } = response.data
+            localStorage.setItem('token', token);
             navigate('/my-courses');
         } catch (error) {
             console.error("Error signing up:", error);
