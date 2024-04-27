@@ -1,11 +1,9 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import styles from "./Learn.module.css";
 import NavBar from "../Components/NavBar";
 import Dropdown from './DropDown.jsx';
-
-
-
+import { useEffect } from "react";
 
 function Learn(){
 
@@ -53,6 +51,15 @@ function Learn(){
         { content: "Retirement Reading 3", linkUrl: "/reading3" },
         // Add more reading items as needed
     ];
+
+    /*const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            navigate('/log-in');
+        }
+    }, [navigate]);*/
   
     return(
         <>
