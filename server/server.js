@@ -4,12 +4,14 @@ const cors = require('cors'); // Import the cors middleware
 const app = express();
 const PORT = process.env.PORT || 3000;
 const mongoose = require('mongoose');
+require("dotenv").config(); // Import the dotenv module to access environment variables
+
 
 const signupRoute = require('./signup');
 const loginRoute = require('./login');
 
-// const uri = "mongodb+srv://rayanreddy29:iVBSdMuxUjsXOU2b@financyusers.1xkznie.mongodb.net/?retryWrites=true&w=majority&appName=FinancyUsers";
-const uri = "mongodb+srv://logan29:WaziAsZZJbz2HA9a@financyusers.1xkznie.mongodb.net/?retryWrites=true&w=majority&appName=FinancyUsers";
+const uri = process.env.uri;
+
 
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 // Create a Mongoose client with a MongoClientOptions object to set the Stable API version
@@ -27,3 +29,4 @@ app.use('/api', loginRoute);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
