@@ -22,8 +22,30 @@ import BudgetingVideo4 from './Budgeting-Learning/BudgetingVideos/BudgetingVideo
 
 
 {/*Imports for Investing Learning */}
+import InvestingReadingR1 from './Investing-Learn/InvestingReading/InvestingLearnR1.jsx';
+import InvestingReadingR2 from './Investing-Learn/InvestingReading/InvestingLearnR2.jsx';
+import InvestingReadingR3 from './Investing-Learn/InvestingReading/InvestingLearnR3.jsx';
+import InvestingReadingR4 from './Investing-Learn/InvestingReading/InvestingLearnR4.jsx';
+import InvestingReadingR5 from './Investing-Learn/InvestingReading/InvestingLearnR5.jsx';
+import InvestingVideoV1 from './Investing-Learn/InvestingVideos/InvestingVideoV1.jsx';
+import InvestingVideoV2 from './Investing-Learn/InvestingVideos/InvestingVideoV2.jsx';
+import InvestingVideoV3 from './Investing-Learn/InvestingVideos/InvestingVideoV3.jsx';
+import InvestingVideoV4 from './Investing-Learn/InvestingVideos/InvestingVideoV4.jsx';
+import InvestingVideoV5 from './Investing-Learn/InvestingVideos/InvestingVideoV5.jsx';
+import InvestingVideoV6 from './Investing-Learn/InvestingVideos/InvestingVideoV6.jsx';
+
+
 
 {/*Imports for Credit and Debt Learning */}
+import CreditDebtReadingR1 from './CreditDebt-Learn/CreditDebtRead/CreditDebtLearnR1.jsx';
+import CreditDebtReadingR2 from './CreditDebt-Learn/CreditDebtRead/CreditDebtLearnR2.jsx';
+import CreditDebtReadingR3 from './CreditDebt-Learn/CreditDebtRead/CreditDebtLearnR3.jsx';
+import CreditDebtReadingR4 from './CreditDebt-Learn/CreditDebtRead/CreditDebtLearnR4.jsx';
+import CreditDebtVideoV1 from './CreditDebt-Learn/CreditDebtVideos/CreditDebtVideoV1.jsx';
+import CreditDebtVideoV2 from './CreditDebt-Learn/CreditDebtVideos/CreditDebtVideoV2.jsx';
+import CreditDebtVideoV3 from './CreditDebt-Learn/CreditDebtVideos/CreditDebtVideoV3.jsx';
+import CreditDebtVideoV4 from './CreditDebt-Learn/CreditDebtVideos/CreditDebtVideoV4.jsx';
+
 
 {/*Imports for Financing Higher Education Learning */}
 
@@ -67,6 +89,32 @@ function App() {
 
 
               {/*Routes for Investing Pages */}
+              <Route path="/InvestingR1" element={<InvestingReadingR1 />}/>
+              <Route path="/InvestingR2" element={<InvestingReadingR2 />}/>
+              <Route path="/InvestingR3" element={<InvestingReadingR3 />}/>
+              <Route path="/InvestingR4" element={<InvestingReadingR4 />}/>
+              <Route path="/InvestingR5" element={<InvestingReadingR5 />}/>
+              <Route path="/InvestingV1" element={<InvestingVideoV1 />}/>
+              <Route path="/InvestingV2" element={<InvestingVideoV2 />}/>
+              <Route path="/InvestingV3" element={<InvestingVideoV3 />}/>
+              <Route path="/InvestingV4" element={<InvestingVideoV4 />}/>
+              <Route path="/InvestingV5" element={<InvestingVideoV5 />}/>
+              <Route path="/InvestingV6" element={<InvestingVideoV6 />}/>
+
+
+
+              {/*Routes for Credit and Debt Pages */}
+              <Route path="/CreditDebtR1" element={<CreditDebtReadingR1 />}/>
+              <Route path="/CreditDebtR2" element={<CreditDebtReadingR2 />}/>
+              <Route path="/CreditDebtR3" element={<CreditDebtReadingR3 />}/>
+              <Route path="/CreditDebtR4" element={<CreditDebtReadingR4 />}/>
+              <Route path="/CreditDebtV1" element={<CreditDebtVideoV1 />}/>
+              <Route path="/CreditDebtV2" element={<CreditDebtVideoV2 />}/>
+              <Route path="/CreditDebtV3" element={<CreditDebtVideoV3 />}/>
+              <Route path="/CreditDebtV4" element={<CreditDebtVideoV4 />}/>
+
+              
+              {/*Routes for Financing Higher Education Pages */}
               <Route path="/My-Courses" element={<Courses />}/>
               <Route path="/Recommended" element={<Recommended />}/>
               <Route path="/SettingsNew" element={<SettingsNew />}/>

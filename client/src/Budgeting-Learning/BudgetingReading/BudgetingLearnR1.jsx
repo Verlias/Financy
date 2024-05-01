@@ -8,7 +8,7 @@ function BudgetingReadingR1(){
     return(
         <>
             <NavBar />
-            <h1>Banking</h1>
+            <h1>How to utilize banks</h1>
             <hr></hr>
             <section>
                 <p>
