@@ -48,6 +48,13 @@ import CreditDebtVideoV4 from './CreditDebt-Learn/CreditDebtVideos/CreditDebtVid
 
 
 {/*Imports for Financing Higher Education Learning */}
+import FinancingReadingR1 from './FinancingHigherEd-Learning/FinancingReading/FinancingHigherLearnR1.jsx';
+import FinancingReadingR2 from './FinancingHigherEd-Learning/FinancingReading/FinancingHigherLearnR2.jsx';
+import FinancingReadingR3 from './FinancingHigherEd-Learning/FinancingReading/FinancingHigherLearnR3.jsx';
+import FinancingVideoV1 from './FinancingHigherEd-Learning/FinancingVideos/FinancingHigherVideoV1.jsx';
+import FinancingVideoV2 from './FinancingHigherEd-Learning/FinancingVideos/FinancingHigherVideoV2.jsx';
+
+
 
 import SignUp from "./Sign-Up-Page/Sign-Up.jsx";
 import LogIn from './Log-In-Page/Log-In.jsx';
@@ -115,6 +122,13 @@ function App() {
 
               
               {/*Routes for Financing Higher Education Pages */}
+              <Route path="/FinancingHigherR1" element={<FinancingReadingR1 />}/>
+              <Route path="/FinancingHigherR2" element={<FinancingReadingR2 />}/>
+              <Route path="/FinancingHigherR3" element={<FinancingReadingR3 />}/>
+              <Route path="/FinancingHigherV1" element={<FinancingVideoV1 />}/>
+              <Route path="/FinancingHigherV2" element={<FinancingVideoV2 />}/>
+
+              {/*Routes for User Dashboard */}
               <Route path="/My-Courses" element={<Courses />}/>
               <Route path="/Recommended" element={<Recommended />}/>
               <Route path="/SettingsNew" element={<SettingsNew />}/>

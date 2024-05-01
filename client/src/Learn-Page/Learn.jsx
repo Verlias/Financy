@@ -62,9 +62,14 @@ function Learn(){
     ];
 
     const FinancingHigherEducation = [
-        { content: "Retirement Reading 1", linkUrl: "/reading1" },
-        { content: "Retirement Reading 2", linkUrl: "/reading2" },
-        { content: "Retirement Reading 3", linkUrl: "/reading3" },
+        { content: "Cost of Higher Education", linkUrl: "/FinancingHigherR1" },
+        { content: "Higher Education Cost Video", linkUrl: "/FinancingHigherV1" },
+        { content: "Navigating Student Loans", linkUrl: "/FinancingHigherR2" },
+        { content: "Student Loans Video", linkUrl: "/FinancingHigherV2" },
+        { content: "Managing College Expenses", linkUrl: "/FinancingHigherR3" },
+        { content: "Interactive Activity", linkUrl: "/reading3" },
+
+
         // Add more reading items as needed
     ];
 
