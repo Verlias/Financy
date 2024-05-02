@@ -4,11 +4,17 @@ import styles from "../User-Dash.module.css";
 import NavBar from "../../Components/NavBar";
 import Course1Img from "../../assets/courseDash1.jpg";
 import axios from "axios";
-//import jwt from 'jsonwebtoken';
 
 function Courses(){
 
     const navigate = useNavigate();
+
+    const handleClick = async (e) => {
+        // Update formData state with the new value of the changed input field
+        e.preventDefault();
+        localStorage.removeItem('token');
+        navigate('/log-in');
+    };
 
     useEffect(() => {
         const token = localStorage.getItem('token');
@@ -84,7 +90,9 @@ function Courses(){
                     <li>
                         <Link to="/settings">Settings</Link>
                     </li>
-                    <li><a href="">Log out</a></li>
+                    <li>
+                        <button onClick={handleClick}>Log out</button>
+                    </li>
                 </ul>
                 </div>
                 <div className={styles.dashInfo}>
